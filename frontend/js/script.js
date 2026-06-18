@@ -1,5 +1,10 @@
-// API Configuration
-const API_BASE = "http://localhost:8080/api/auth";
+// API Configuration - Dynamically resolve local network IP for mobile testing
+const hostname = window.location.hostname;
+const API_BASE = (hostname === "localhost" || hostname === "127.0.0.1")
+    ? "http://localhost:8080/api/auth"
+    : (hostname.match(/^\d+\.\d+\.\d+\.\d+$/))
+        ? `http://${hostname}:8080/api/auth`
+        : "http://localhost:8080/api/auth"; // fallback
 
 // Common Toast Notification Helper
 function showToast(message, type = "info") {
