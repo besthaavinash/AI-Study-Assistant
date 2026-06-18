@@ -1,0 +1,16 @@
+# Maven target files
+backend/studyassistant/target/
+backend/studyassistant/.mvn/wrapper/maven-wrapper.jar
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Node / Frontend dependencies
+frontend/node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

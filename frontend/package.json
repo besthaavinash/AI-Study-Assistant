@@ -1,0 +1,11 @@
+{
+  "name": "ai-study-assistant-frontend",
+  "version": "1.0.0",
+  "description": "Frontend static server for AI Study Assistant",
+  "scripts": {
+    "dev": "npx http-server -p 3000"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
